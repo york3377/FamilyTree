@@ -1,0 +1,45 @@
+Scope: Family Tree
+
+Level: Maintain
+
+Primary Actor: Maintainer
+
+Stakeholders and Interests: 
+	- Maintainer: Performs basic CRUD operations on items of a family tree, including births, deaths, events, and family structure.
+	- Family Tree App: Manages user input and database operations
+	
+
+Preconditions: User must be registered as a family tree maintainer.
+
+Success Guarantee: The user enters a modification to the family tree, and it is successfully performed.
+
+Main Success Scenario:
+	1.) Maintainer logs into the site with proper maintaining credentials.
+	2.) Family tree app retrieves the family tree for the maintainer to view
+	3.) Maintainer enters an CRUD action to the application, such as adding a new birth.
+	4.) Family tree app performs the CRUD action on the tree, and reports success to the user
+	5.) Family tree app displays an updated tree.
+
+Extensions (or Alternative Flow):
+	1. User does not enter valid information
+		1a.) Not all fields are properly filled out
+		1b.) User enters a duplicate person
+	2.) Maintainer changes their mind, and performs an undo on the maintenance task.
+		2a.) Maintainer chooses to "undo" the last transaction, and the database is reverted.
+		2b.) Maintainer chooses to edit the last transaction, changing specific details.
+		
+
+Special Requirements:
+	- Family member identifier must be unique (SSN?)
+	- Transaction must be secure
+	
+
+Technology and Data Variations List:
+	- Must support any browser
+	- 
+
+Frequency of Occurrence: 
+	- Any time a user wishes to update their family tree
+	
+Open Issues: 
+	- Do we support songs in Spanglish?
